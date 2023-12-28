@@ -1,0 +1,51 @@
+----- Virtualization -----
+Execute CierraMaster All tasks;.\Bin\ing\CierraMaster_Checkpoint.sequence.xml
+Restore VDA Checkpoint;.\Bin\ing\restorecheckpoint.sequence.xml
+Perform single Checkpoint;.\Bin\ing\Take_Checkpoint.sequence.xml
+DELETE SCVMM CHECKPOINTS WARNING!!!;.\Bin\ing\delete_Checkpoint.sequence.xml
+----- Active Directory Citrix -----
+Add users to Freeway Authentication CALL;.\Bin\ING\Citrix_Groups\Accesos_Freeway\freewayMFACALL.sequence.xml
+Add users to Freeway Authentication TOKEN;.\Bin\ING\Citrix_Groups\Accesos_Freeway\freewayMFATOKEN.sequence.xml
+Add users to Freeway Aplicaciones no Produccion;.\Bin\ING\Citrix_Groups\Accesos_Freeway\freewayAppsnoprod.sequence.xml
+Add users to Freeway Aplicaciones Produccion;.\Bin\ING\Citrix_Groups\Accesos_Freeway\freewayAppsprod.sequence.xml
+Add users to Freeway Kanguro;.\Bin\ING\Citrix_Groups\Accesos_Freeway\freewaykanguro.sequence.xml
+Add users to Freeway KanguroN2;.\Bin\ING\Citrix_Groups\Accesos_Freeway\freewayKanguro_N2.sequence.xml
+Add users to Freeway Kanguro Apps;.\Bin\ING\Citrix_Groups\Accesos_Freeway\freewayKanguroAPPS.sequence.xml
+Add users to Freeway DTLK;.\Bin\ING\Citrix_Groups\Accesos_Freeway\freewayDTLK.sequence.xml
+Add users to Freeway DWH;.\Bin\ING\Citrix_Groups\Accesos_Freeway\freewayDWH.sequence.xml
+Add users to Freeway LGCY;.\Bin\ING\Citrix_Groups\Accesos_Freeway\freewayLGCY.sequence.xml
+Add users to Freeway Normal;.\Bin\ING\Citrix_Groups\Accesos_Freeway\freewayFreewayNormal.sequence.xml
+Add Users To Freeway Partners;.\Bin\ING\Citrix_Groups\Accesos_Freeway\freewayPartners.sequence.xml
+Add users to Freeway BookMarks;.\Bin\ING\Citrix_Groups\Accesos_Freeway\freewayBookMarks.sequence.xml
+Add users to Freeway Portal Apps;.\Bin\ING\Citrix_Groups\Accesos_Freeway\freewayPortalApp.sequence.xml
+Users - Clean Freewaygroups from disabled users;.\Bin\ING\Citrix_Groups\Clean_Groups_from_disabled.sequence.xml
+----- File/Folder Operations & Checks -----
+Check Files in Specific Filepaths;.\Bin\FileOps\Checkfiles\CheckFiles.Sequence.xml
+Copy Files to Specific Filepaths;.\Bin\FileOps\CopyFiles\CopyFiles1.Sequence.xml
+Copy Files from Source to Target Folder;.\Bin\FileOps\CopyFiles\CopyFiles2.Sequence.xml
+Delete Files from Specific Filepaths;.\Bin\FileOps\DeleteFiles\DeleteFiles.Sequence.xml
+File (Version) Check;.\Bin\FileOps\CheckFileVersion\CheckFileVersion.Sequence.xml
+CreateFolders;.\Bin\FileOps\CreateFolders\CreateFolders.Sequence.xml
+----- Software Queries & Checks -----
+Firefox Version;.\Bin\Checks\FirefoxVersionCheck\FirefoxVersionCheck.Sequence.xml
+Registry Queries;.\Bin\Checks\RegQueries\RegQueries.sequence.xml
+Power Management Check;.\Bin\Checks\PMESettingsCheck\PMESettingsCheck.Sequence.xml
+HotFixes Check;.\Bin\Checks\HotfixesCheck\HotfixesCheck.Sequence.xml
+Last HotFix Install Date;.\Bin\Checks\HotfixesCheck\LastHotfixInstallDateCheck.Sequence.xml
+Check String in File;.\Bin\Checks\CheckStringInFile\CheckStringInFile.Sequence.xml
+Search For pattern;.\Bin\Checks\SearchForPattern\SearchForPattern.Sequence.xml
+----- Tasks -----
+Check Device Type (WKS, LPT, HVD);.\Bin\Tasks\ChasisType\Check_DeviceType.Sequence.xml
+Display last 48 Hours Reboots;.\Bin\Tasks\CountReboots\DisplayShutdownsAndReboots.Sequence.xml
+Display the current user logged on;.\Bin\Tasks\LoggedOnUser\LoggedOnUser.Sequence.xml
+Get the MAC Address;.\Bin\Tasks\GetMACAddress\GetMACAddress.Sequence.xml
+Get the OS Installation Date;.\Bin\Tasks\OSInstallDate\Check_OS_InstallDate.Sequence.xml 
+Ping Machines (DNS Query);.\Bin\Tasks\PingDNS\PingDNS.Sequence.xml
+Reboot Machines;.\Bin\Tasks\RebootMachines\RebootMachines.Sequence.xml
+Search for installed KB;.\Bin\Tasks\Check_Updates_KB\Check_Updates_KB.Sequence.xml
+Get Free Space in C Drive;.\Bin\Tasks\GetCDriveFreeSpace\GetCDriveFreeSpace.Sequence.xml
+Resolve IP to DNS;.\Bin\Tasks\IPToDNS\GetNameFromIP.sequence.xml
+Check certificates expiration;.\Bin\ING\certificates\certificates.sequence.xml
+Renew Certificates;.\Bin\Tasks\RenewCertificate\RenewCertificate.Sequence.xml
+Service - Check Status;.\Bin\Tasks\ServiceState\ServiceState.sequence.xml
+Service - Action;.\Bin\Tasks\ServiceAction\ServiceAction.sequence.xml

@@ -1,0 +1,297 @@
+
+  Hydra
+Version 5.58 28/01/2022
+  - New execution of the final step for citrix builds deployment
+Version 5.56 18/04/2021
+  - New Add Computers ToInstall collections Sequence in SCCM
+  - New Add Collections To Install Collections Sequence
+  - Fix in CIERRAMaster Sequence to ask for remote credentials to perform elevated actions
+Version 5.55 (05.05.2020)
+  - New: Execute Cierra Master All Tasks
+  - New: Perform Single Checkpoint
+  - New: Restore VDA Checkpoint
+  - Fix: IsOnline has been modified to avoid getting mobimax networks
+  - Fix: SCCM Reinstall modifications to Match ING settings
+
+ Version 5.54 (03.05.2017)
+  - New: New Keyword: credentialbox
+  - New: secretinputbox and credentialbox can show/hide the text typed
+  - New: Searchbox can be hidden
+  - New: Suppression of the country based settings
+  - Fix: Cancelling an object with a schedule cancels the whole group
+  - Fix: MaxObjects now correctly counted after a sequence restart
+
+ Version 5.53 (20.04.2017)
+  - New: Search Box for the Sequences
+ 
+ Version 5.52 (28.03.2017)
+  - Fix: Groups lists exported with relative path
+  - Fix: selectfile now accepts multiple OpenFileDialog filters
+  - Fix: Different bug fixes
+  - New: New variables windows design
+  - New: Flexible number of parameters for all variables types
+  - New: Code optimization
+
+ Version 5.51 (13.03.2017)
+  - New: New "warning" query window design
+  - New: New "securitycode" query window design
+
+ Version 5.50 (09.03.2017)
+  - New: New Keyword: securitycode
+  - New: Security increased with more start confirmations
+  - New: Ask for reusing/redefine the variables on a sequence restart
+  - New: Ask before creating a new collection from highlighted objects
+  - New: Delete selected objects with the DEL key
+  - New: Code optimization: Sequences parameters unified as objects
+  - Fix: Expired schedulers now skipped
+  - Fix: Schedulers for Groups correctly exported/imported
+  - Fix: Objects can now only be added on non running groups
+  - Fix: Catch more empty objects
+  - Fix: Fonts code correction
+  - Fix: Some code comments
+
+ Version 5.41 (26.02.2017)
+  - Fix: Slow start of the sequences with big lists of objects
+
+ Version 5.40 (20.02.2017)
+  - New: Tabs can now be moved
+  - Fix: Some Tabs small improvements
+
+ Version 5.36 (17.02.2017)
+  - Fix: Restart of the same sequence when running not possible
+
+ Version 5.35 (11.02.2017)
+  - New: Export results without header: the results elements are split
+  - Fix: CSV export displays the correct sequence name
+
+ Version 5.34 (09.02.2017)
+  - New: New cell formating options for the 3rd return parameter
+
+ Version 5.33 (07.02.2017)
+  - Fix: secretinputbox value not displayed anymore and replaced by *
+  - Fix: New Group assigned with scheduler now correctly set
+
+ Version 5.32 (06.02.2017)
+  - Fix: Start of new sequence when some already running not possible 
+
+ Version 5.31 (24.01.2017)
+  - Fix: Maximum threads exceeded in some situations
+  - Fix: ComboBox and Checkbox variables not working with param file
+  - Fix: Name of objects were still read only after Cancel All Force
+
+ Version 5.30 (06.01.2017)
+  - New: 3rd returned param extended: accepts now Cell font formatting
+  - New: Debug mode extended with values and error positions
+  - Fix: The 3rd param is checked for its compatibility to HTML codes
+ 
+ Version 5.25 (04.01.2017)
+  - New: 3rd Tab design modified
+  - New: Visual Styles enabled 
+ 
+ Version 5.24 (19.12.2016)
+  - Fix: Cancel all steps of a sequence if the PreLoad is not OK
+  - Fix: Only accepts numbers for the Max Threads
+                                               
+ Version 5.23 (12.12.2016)
+  - New: Central Log Runspace Variable $CentralLogPath
+  - New: Full Absolute Path Runspace Variable $SequenceFullPath
+  - New: Tab Styles  
+
+ Version 5.22 (06.12.2016)
+  - New: Option to auto generate IP's from a range defined (menu Load)
+  - GUI: Small cosmetic changes
+
+ Version 5.21 (01.12.2016)
+  - Fix: Deletion of objects was not possible in some cases
+
+ Version 5.20 (27.11.2016)
+  - Doc: Code commented
+  - New: New Sequence keyword: maxobjects
+  - New: Parameters extension of variables combobox and multicheckbox
+  - Fix: Clear the grid only possible if no sequence is running
+  - Fix: Sending of mail corrected
+  - Fix: Various other bugs fixed
+  - Fix: Code cleaning
+                      
+ Version 5.15 (23.11.2016)
+  - Fix: Bug fixes in some right click options
+  - Fix: Code improvement     
+
+ Version 5.14 (20.11.2016)
+  - New: Tab color picker
+  - New: Load and Save Tabs and their objects
+  - Fix: Bug fixes in the Tabs and Groups management
+  - Fix: Code improvement
+                       
+ Version 5.13 (14.11.2016)
+  - New: Current Tab now highlighted
+  - New: New Cancel menu and Cancel (No Wait) option
+
+ Version 5.12 (13.11.2016) 
+  - Fix: Cancel option fixed
+
+ Version 5.11 (03.11.2016)
+  - Fix: CTRL+V bug in cells in edition mode
+  - New: History in the About window  
+
+ Version 5.1 (02.11.2016)
+  - New: Objects can be shared between the tasks
+  - New: New Sequence keyword PreLoad
+  - New: New Sequence keyword ImportPSSnapIn
+  - New: New Sequence keyword ImportPSModulesFromPath
+  - New: New Sequence keyword ImportPSModule
+  - Fix: Duplicate entries of objects on rerun of a sequence
+  - Fix: Right Click correction
+  - Fix: Some code and display fixes
+  
+ Version 5.02 (18.10.2016)
+  - Fix: Transparent Tab Header
+ 
+ Version 5.01 (17.10.2016)
+  - New: New variable type: Credentials
+  - New: New variable type: SecretInputBox  
+
+ Version 5.0 (Raptor) (16.10.2016)
+  - New: Parallel run of different sequences
+  - New: Add new objects during the run of sequences
+  - New: Tabs
+  - New: Groups
+  - New: Mail sending
+  - New: Small GUI changes
+  - Fix: Several bugfixes and optimizations
+  ... and much more    
+  
+ Version 4.11 (12.08.2016)
+  - Fix: Issue with case sensitive variable types
+ 
+ Version 4.1 (09.08.2016)
+  - New: New keyword "scheduler" to delay the start of a sequence 
+
+ Version 4.02 (07.08.2016)
+  - Fix: Highlightening kept on sequence run and selection change
+  - Fix: Right clicks behaviors    
+ 
+ Version 4.01 (01.08.2016)
+  - New: Option to keep the checkboxes state after a sequence run
+
+ Version 4.0 (29.07.2016)
+  - New: Fully new interface
+  - New: Multiple loads of objects
+  - New: Individual selection of objects
+  - New: Results states kept in the grid for historic or reuse
+  - New: Start of new sequence without reload of objects
+  - New: Dynamic selections of sequences
+  - New: New grid right click options
+  - New: Code rewritting and improvements
+  - New: Sequences fully compatible with Hydra 3
+  ... and many new features
+
+  Version 3.04 (09.05.2016)
+  - Fix: Window position not saved if inconsistencies are detected
+  - New: Variables values displayed and kept when they have been set          
+
+  Version 3.03 (06.05.2016)
+  - New: If existing, local country settings are loaded at start
+  - New: Option to change between local country and full settings
+  - New: Tasks in XML sequences can also be relative to the XML file
+  
+  Version 3.02 (03.05.2016)
+  - New: Right click extension: selection by job final results
+  - Bug Fix: SequenceFullPath variable sometimes wrongly allocated
+  - Bug Fix: Wrap mode fixed for non-displayed cells also (R.J.)
+  
+  Version 3.01 (02.05.2016)
+  - Bug Fix: Duplicate objects removed in the Export selection
+  - Bug Fix: Last used directories for sequences and objects are now correctly saved
+
+  Version 3.0 (25.04.2016)
+  - GUI: The window is now fully resizable
+  - GUI: The grid columns can be manually or automatically adjusted
+  - GUI: The Job States results can be displayed in wrapping mode
+  - GUI: A new menu bar has been added
+  - GUI: The default colors of can be individually set
+  - GUI: Objects can be removed from file lists inside the GUI
+  - New: Different kind of objects can be used: machines, users, groups,...
+  - New: The export paths can be individually set
+  - New: Objects collections can be retrieved from AD
+  - New: Machines collections can be retrieved from SCCM
+  - New: Steps in Sequences can be deactivated
+  - New: The tasks are now defined in xml format
+  - New: Several types of variables can be queried and used in the different steps
+  - New: The names of the variables is not restricted to an array anymore and can be freely defined
+  - New: The actions performed can be logged
+  - New: A debug mode can be activated to unhide the Powershell host window
+  - Bug fixes: GUI and other bug fixes
+
+  Version 2.9 (31.03.2016)
+  - New: Variables names can be freely defined and used in tasks
+  - New: $MyScriptInvocation accessible in the tasks
+  - New: $SequenceFullPath accessible in the tasks
+  - Fix: Removes spaces in machines names after a file import
+  - Fix: Some GUI behaviors corrections
+  - Fix: Hydra Registry entry for HKCU instead of HKLM
+
+  Version 2.8 (23.03.2016)
+  - New: Script parameter for the Sequences List
+
+  Version 2.73 (21.03.2016)
+  - New: Sequence errors displayed
+  - GUI: GUI enhancements
+                              
+  Version 2.72 (17.03.2016)
+  - Bug fixes: GUI bug fixes
+
+  Version 2.71 (16.02.2016)
+  - Improvement: Variables in tasks with default values
+  - Bug fixes & Powershell 2 compatibility enhanced    
+
+  Version 2.7 (15.02.2016)
+  - New: Variables now available in tasks (beta)
+  - New: Create a new machines list with a right click
+  - New: Export only the selected machines if desired
+  - New: Export GUI completely redesigned 
+       
+  Version 2.6 (31.01.2016)
+  - New: New export module
+
+  Version 2.5 (18.01.2016)
+  - New: Option to restart the tool with other credentials
+
+  Version 2.4 (10.01.2016)
+  - New: New optional parameters in the Sequence files
+  - Other: Code cleaning
+
+  Version 2.31 (05.01.2016)
+  - New: Export results to HTML
+
+  Version 2.3 (05.01.2016)
+  - New: Tasks needs now a ps1 extension and are standard files
+  - New: Sequences now accept relative paths
+
+  Version 2.21 (09.12.2015)
+  - New: Right click options extended
+
+  Version 2.2 (08.12.2015)
+  - New: New parallelization engine, quicker, needs less recources
+  - New: Default threads defined in the sequences list
+
+  Version 2.1 (02.12.2015)
+  - New: Export the grid result to Excel or CSV
+  - New: Possibility to colorize the grid individually
+
+  Version 2.0 (25.11.2015)
+  - New: Possibility to enter the name of the machine(s) manually
+  - New: Drop down list for sequences
+  - New: Progress
+       
+  Version 1.21 (16.10.2015)
+  - Change: Job state displayed in case of a successful finish
+
+  Version 1.2 (08.10.2015)
+   - New: Right click on machines to get the steps history
+
+  Version 1.1 (05.10.2015)
+   - New: New return format expected for the tasks (State,Comment)
+
+  Version 1.0 (01.10.2015)
+  - Initial version
