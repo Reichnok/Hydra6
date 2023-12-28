@@ -1,0 +1,44 @@
+----- Workstations Queries -----
+AT - Get AT Workstations from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=Workstations,OU=NEOS CIB 64,OU=VIE,OU=AT,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+BE - Get BE Workstations from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=Workstations,OU=NEOS CIB 64,OU=BRU,OU=BE,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+BG - Get BG Workstations from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=Workstations,OU=NEOS CIB 64,OU=SOF,OU=BG,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+CZ - Get CZ Workstations from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=Workstations,OU=NEOS CIB 64,OU=PRG,OU=CZ,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+DE - Get DE Workstations from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=Workstations,OU=NEOS CIB 64,OU=FRA,OU=DE,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+DK - Get DK Workstations from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=Workstations,OU=NEOS CIB 64,OU=CPH,OU=DK,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+ES - Get ES Workstations from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=Workstations,OU=NEOS CIB 64,OU=MAD,OU=ES,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+IE - Get IE Workstations from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=Workstations,OU=NEOS CIB 64,OU=DUB,OU=IE,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+IT - Get IT Workstations from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=Workstations,OU=NEOS CIB 64,OU=MIL,OU=IT,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+NL - Get NL Workstations from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=Workstations,OU=NEOS CIB 64,OU=AMS,OU=IE,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+NO - Get NO Workstations from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=Workstations,OU=NEOS CIB 64,OU=OSL,OU=NO,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+PL - Get PL Workstations from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=Workstations,OU=NEOS CIB 64,OU=WAW,OU=PL,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+PT - Get PT Workstations from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=Workstations,OU=NEOS CIB 64,OU=LIS,OU=PT,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+RO - Get RO Workstations from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=Workstations,OU=NEOS CIB 64,OU=BUH,OU=RO,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+RU - Get RU Workstations from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=Workstations,OU=NEOS CIB 64,OU=MOW,OU=RU,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+SE - Get SE Workstations from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=Workstations,OU=NEOS CIB 64,OU=STO,OU=SE,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+BP2S-IE - Get IE Workstations from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=Workstations,OU=NEOS CIB 64,OU=IE,OU=BP2S,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+BPIP-BE - Get BE Workstations from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=Workstations,OU=NEOS CIB 64,OU=BE,OU=BPIP,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+REPO-GR - Get GR HVDs from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=PARIS_XD02_PRD,OU=HVD,OU=Workstations,OU=NEOS CIB 64,OU=GR,OU=REPO,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+REPO-UA - Get UA Workstations from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=Workstations,OU=NEOS CIB 64,OU=UA,OU=REPO,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+REPO-TR - Get TR Workstations from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=Workstations,OU=NEOS CIB 64,OU=TR,OU=REPO,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+REPO-IL - Get IL Workstations from NEOS CIB 64;Get-ADComputer -SearchBase 'OU=Workstations,OU=NEOS CIB 64,OU=IL,OU=REPO,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp Name
+----- Users Queries -----
+AT - Get AT Users from Users & Clients;Get-ADUser -SearchBase 'OU=Users & Clients,OU=VIE,OU=AT,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp SamAccountName
+BG - Get BG Users from Users & Clients;Get-ADUser -SearchBase 'OU=Users & Clients,OU=SOF,OU=BG,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp SamAccountName
+CZ - Get AT Users from Users & Clients;Get-ADUser -SearchBase 'OU=Users & Clients,OU=PRG,OU=CZ,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp SamAccountName
+DE - Get AT Users from Users & Clients;Get-ADUser -SearchBase 'OU=Users & Clients,OU=FRA,OU=DE,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp SamAccountName
+DK - Get AT Users from Users & Clients;Get-ADUser -SearchBase 'OU=Users & Clients,OU=CPH,OU=DK,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp SamAccountName
+ES - Get AT Users from Users & Clients;Get-ADUser -SearchBase 'OU=Users & Clients,OU=MAD,OU=ES,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp SamAccountName
+IE - Get AT Users from Users & Clients;Get-ADUser -SearchBase 'OU=Users & Clients,OU=DUB,OU=IE,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp SamAccountName
+IT - Get AT Users from Users & Clients;Get-ADUser -SearchBase 'OU=Users & Clients,OU=MIL,OU=IT,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp SamAccountName
+NL - Get AT Users from Users & Clients;Get-ADUser -SearchBase 'OU=Users & Clients,OU=AMS,OU=NL,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp SamAccountName
+NO - Get AT Users from Users & Clients;Get-ADUser -SearchBase 'OU=Users & Clients,OU=OSL,OU=DE,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp SamAccountName
+PL - Get AT Users from Users & Clients;Get-ADUser -SearchBase 'OU=Users & Clients,OU=WAW,OU=PL,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp SamAccountName
+PT - Get AT Users from Users & Clients;Get-ADUser -SearchBase 'OU=Users & Clients,OU=LIS,OU=PT,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp SamAccountName
+RO - Get AT Users from Users & Clients;Get-ADUser -SearchBase 'OU=Users & Clients,OU=BUH,OU=RO,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp SamAccountName
+RU - Get AT Users from Users & Clients;Get-ADUser -SearchBase 'OU=Users & Clients,OU=MOW,OU=RU,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp SamAccountName
+SE - Get AT Users from Users & Clients;Get-ADUser -SearchBase 'OU=Users & Clients,OU=STO,OU=SE,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp SamAccountName
+BP2S-IE - Get AT Users from Users & Clients;Get-ADUser -SearchBase 'OU=BP2S Users,OU=Users & Clients,OU=DUB,OU=IE,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp SamAccountName
+REPO-GR - Get AT Users from Users & Clients;Get-ADUser -SearchBase 'OU=Users & Clients,OU=GR,OU=REPO,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp SamAccountName
+REPO-UA - Get AT Users from Users & Clients;Get-ADUser -SearchBase 'OU=Users & Clients,OU=UA,OU=REPO,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp SamAccountName
+REPO-TR - Get AT Users from Users & Clients;Get-ADUser -SearchBase 'OU=Users & Clients,OU=TR,OU=REPO,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp SamAccountName
+REPO-IL - Get AT Users from Users & Clients;Get-ADUser -SearchBase 'OU=Users & Clients,OU=IL,OU=REPO,dc=euro,dc=net,dc=intra' -Filter '*' | Select -Exp SamAccountName

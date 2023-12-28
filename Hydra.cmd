@@ -1,0 +1,1 @@
+start powershell -ExecutionPolicy Bypass -windowstyle hidden ".\Hydra6.ps1"
